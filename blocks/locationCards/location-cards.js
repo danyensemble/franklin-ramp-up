@@ -3,16 +3,16 @@ import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 export default function decorate(block) {
   /* change to ul, li */
 
-  console.log('PRINING INSIDE DECORATE() ==== locationCards.JS');
-  console.log('printing block for locationCards', block);
+  console.log('PRINING INSIDE DECORATE() ==== lcoation-cards.JS');
+  console.log('printing block for location-cards', block);
 
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'locationCards-card-image';
-      else div.className = 'locationCards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'location-cards-card-image';
+      else div.className = 'location-cards-card-body';
     });
     ul.append(li);
   });

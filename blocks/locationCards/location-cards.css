@@ -1,4 +1,4 @@
-.locationCards > ul {
+.location-cards > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,24 +7,24 @@
   grid-gap: 16px;
 }
 
-.locationCards > ul > li {
+.location-cards > ul > li {
   border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color)
 }
 
-.locationCards .locationCards-card-body {
+.location-cards .location-cards-card-body {
   margin: 16px;
 }
 
-.locationCards .locationCards-card-image {
+.location-cards .location-cards-card-image {
   line-height: 0;
 }
 
-.locationCards .locationCards-card-body > *:first-child {
+.location-cards .location-cards-card-body > *:first-child {
   margin-top: 0;
 }
 
-.locationCards > ul > li img {
+.location-cards > ul > li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
