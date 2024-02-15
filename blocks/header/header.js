@@ -63,8 +63,6 @@ function toggleNavSectionListItems(navSection, container, append = true, forceEx
  * @param {Element} block The header block element
  */
 export default async function decorate(block) {
-  console.log('printing inside decorate() ==== header.js', 'TODO: REMOVE.');
-
   // fetch nav content
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta).pathname : '/nav';
